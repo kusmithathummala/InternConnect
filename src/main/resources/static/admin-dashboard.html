@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | InternConnect</title>
+    <link rel="stylesheet" href="/admin-dashboard.css">
+    <script src="/admin-dashboard.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/index.html" class="brand">InternConnect</a>
+            <div class="header-actions">
+                <span id="adminName">Administrator</span>
+                <button id="logoutButton" type="button">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="welcome-section">
+            <p class="eyebrow">ADMINISTRATION</p>
+            <h1>Admin Dashboard</h1>
+            <p>Manage internships, students, and applications from one place.</p>
+        </section>
+
+        <section class="stats-grid" aria-label="Dashboard statistics">
+            <article class="stat-card">
+                <div class="stat-icon blue">I</div>
+                <p>Total Internships</p>
+                <h2 id="totalInternships">—</h2>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon purple">S</div>
+                <p>Registered Students</p>
+                <h2 id="totalStudents">—</h2>
+            </article>
+
+            <article class="stat-card">
+                <div class="stat-icon green">A</div>
+                <p>Total Applications</p>
+                <h2 id="totalApplications">—</h2>
+            </article>
+        </section>
+
+        <section class="management-section">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+                <article class="action-card">
+                    <h3>Manage Internships</h3>
+                    <p>Add new internships, edit existing details, or remove listings.</p>
+                    <a href="/admin-internships.html">Manage Internships →</a>
+                </article>
+
+                <article class="action-card">
+                    <h3>Manage Applications</h3>
+                    <p>Review student applications and update their status.</p>
+                    <a href="/admin-applications.html">View Applications →</a>
+                </article>
+            </div>
+        </section>
+
+        <p id="dashboardMessage" role="alert" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 InternConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | InternConnect</title>
+    <link rel="stylesheet" href="/admin-login.css">
+    <script src="/admin-login.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/index.html" class="brand">InternConnect</a>
+            <a href="/login.html" class="student-link">Student Login</a>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <section class="login-card">
+            <div class="admin-icon">A</div>
+            <p class="eyebrow">ADMINISTRATION</p>
+            <h1>Welcome Back!</h1>
+            <p class="subtitle">Sign in to manage InternConnect.</p>
+
+            <form id="adminLoginForm">
+                <div class="form-group">
+                    <label for="email">Admin Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your admin email"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <p id="loginMessage" role="alert" aria-live="polite"></p>
+
+                <button type="submit" id="loginButton">
+                    Sign In as Admin
+                </button>
+            </form>
+
+            <p class="security-note">
+                Authorized administrators only.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 InternConnect. All rights reserved.</p>
+    </footer>
+</body>
+</html>

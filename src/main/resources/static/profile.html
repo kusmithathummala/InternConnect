@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | InternConnect</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/profile.css">
+
+    <script src="/profile.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="brand">InternConnect</a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="/">Find Internships</a>
+                <a href="/my-applications.html">My Applications</a>
+                <a href="/profile.html" class="active">My Profile</a>
+
+                <button type="button" id="logoutButton" class="nav-button">
+                    Logout
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-page">
+
+        <section class="profile-heading">
+            <p class="profile-eyebrow">YOUR ACCOUNT</p>
+            <h1>My Profile</h1>
+            <p>
+                View and update your personal information.
+            </p>
+        </section>
+
+        <section class="profile-card">
+
+            <div class="profile-avatar" id="profileAvatar">S</div>
+
+            <h2 id="profileDisplayName">Loading profile...</h2>
+
+            <p class="profile-subtitle">
+                InternConnect Student
+            </p>
+
+            <div id="profileMessage"
+                 class="profile-message"
+                 role="status"
+                 aria-live="polite"></div>
+
+            <form id="profileForm" class="profile-form">
+
+                <div class="profile-field">
+                    <label for="fullName">Full name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        maxlength="100"
+                        autocomplete="name"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="profile-field">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        readonly>
+                    <small>Your registered email cannot be changed here.</small>
+                </div>
+
+                <div class="profile-field">
+                    <label for="phone">Phone number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        maxlength="15"
+                        autocomplete="tel"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <button
+                    type="submit"
+                    id="saveProfileButton"
+                    class="profile-save-button">
+                    Save Changes
+                </button>
+
+            </form>
+
+            <a href="/" class="profile-back-link">
+                ← Back to internships
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 InternConnect. Start building your future.</p>
+    </footer>
+
+</body>
+</html>

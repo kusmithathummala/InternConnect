@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | InternConnect</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/register.css">
+
+    <script src="/auth.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="brand">InternConnect</a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="/">Find Internships</a>
+                <a href="/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <section class="auth-container">
+
+            <div class="auth-brand-icon">IC</div>
+
+            <p class="auth-eyebrow">START YOUR JOURNEY</p>
+
+            <h1>Create Your Account</h1>
+
+            <p class="auth-description">
+                Join InternConnect to discover internships and
+                manage your applications in one place.
+            </p>
+
+            <form id="registerForm" class="auth-form">
+
+                <div class="form-group">
+                    <label for="fullName">Full name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        maxlength="100"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        maxlength="150"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                        maxlength="15">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        maxlength="72"
+                        required>
+
+                    <small class="field-hint">
+                        Use at least 8 characters.
+                    </small>
+                </div>
+
+                <p id="registerMessage"
+                   class="auth-message"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <button type="submit" class="auth-submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="/login.html">Login here</a>
+            </p>
+
+            <a href="/" class="auth-back-link">
+                ← Back to internships
+            </a>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 InternConnect. Start building your future.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications | InternConnect</title>
+
+    <!-- Common homepage styling -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Applications page styling -->
+    <link rel="stylesheet" href="/my-applications.css">
+
+    <script src="/my-applications.js" defer></script>
+</head>
+<body>
+
+    <!-- Same header structure as the homepage -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="brand">InternConnect</a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="/index.html">Home</a>
+                
+
+
+                <a href="/my-applications.html" class="active">
+                    My Applications
+                </a>
+                <a href="/profile.html">My Profile</a>
+                <button type="button" id="logoutButton" class="nav-button">
+                    Logout
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="applications-page">
+
+        <section class="applications-heading">
+            <p class="eyebrow">YOUR CAREER JOURNEY</p>
+            <h1>My Applications</h1>
+            <p>
+                Keep track of the internships you have applied for
+                and check their current status.
+            </p>
+        </section>
+
+        <section class="application-summary">
+            <div class="summary-card">
+                <span class="summary-label">Total Applications</span>
+                <strong id="totalApplications">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-label">Pending</span>
+                <strong id="pendingApplications">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-label">Accepted</span>
+                <strong id="acceptedApplications">0</strong>
+            </div>
+        </section>
+
+        <section class="applications-section">
+            <div class="applications-section-heading">
+                <div>
+                    <h2>Your Applications</h2>
+                    <p>
+                        Review your submitted internship applications.
+                    </p>
+                </div>
+
+                <a href="/" class="back-to-internships">
+                    + Find Internships
+                </a>
+            </div>
+
+            <div
+                id="applicationsMessage"
+                class="applications-message"
+                role="status"
+                aria-live="polite">
+                Loading your applications...
+            </div>
+
+            <div id="applicationsList" class="applications-list"></div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 InternConnect. Start building your future.</p>
+    </footer>
+
+</body>
+</html>

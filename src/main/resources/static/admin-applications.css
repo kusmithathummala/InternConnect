@@ -1,0 +1,273 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f4f7fb;
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    color: #2563eb;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#logoutButton {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 36px 24px;
+}
+
+.page-heading {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.page-heading h1 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+.page-heading p:last-child {
+    color: #64748b;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 32px;
+}
+
+.summary-card {
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.summary-card h2 {
+    margin: 12px 0 0;
+    font-size: 30px;
+}
+
+.applications-section {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.list-heading h2 {
+    margin-top: 0;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.filters label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+#pageMessage {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.applications-list {
+    display: grid;
+    gap: 16px;
+}
+
+.application-card {
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.application-card h3 {
+    margin: 0 0 8px;
+}
+
+.application-card p {
+    margin: 8px 0;
+    color: #475569;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.application-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-badge.accepted {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-badge.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.status-controls select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.site-footer {
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .container {
+        padding: 24px 14px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .summary-card {
+        padding: 16px;
+    }
+
+    .applications-section {
+        padding: 16px;
+    }
+
+    .application-top {
+        flex-direction: column;
+    }
+
+    .filters {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
